@@ -6,6 +6,9 @@ import java.time.LocalTime;
 import java.time.Period;
 import java.util.Arrays;
 
+/**
+ * @author Alexander Iablonski
+ * */
 public class Fitness {
     private Membership[] gym = new Membership[20];
     private Membership[] pool = new Membership[20];
