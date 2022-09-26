@@ -1,45 +1,31 @@
-### «Фитнес»
+### "Fitness"
 
-В фитнес клубе есть три типа абонементов:
+There are three types of memberships in the fitness club:
 
-1. Разовый (на один день). По разовому абонементу клиенты могут посещать бассейн и тренажерный зал с 8 до 22 часов.
-2. Дневной (срок действия может быть любым). По данному абонементу клиенты могут посещать тренажерный зал и групповые занятия (но не бассейн) с 8
-   до 16 часов.
-3. Полный (срок действия может быть любым). По данному абонементу клиенты могут посещать тренажерный зал, бассейн и групповые занятия с 8 до 22
-   часов.
+1. One-time (for one day). With a one-time membership, owner can access the pool and gym from 8 to 10.
+2. Daily. With this pass, owner can use the gym and group classes (but not the pool) from 8 to 16.
+3. Full. With this membership, owner can access the gym, pool and group classes from 8 to 22.
 
-Каждый абонемент хранит дату регистрации (текущая дата) и дату окончания регистрации. Каждый абонемент хранит информацию
-о владельце. Данные о владельце: имя, фамилия, год рождения.
+Each membership stores the registration date (current date) and the registration end date. Each membership stores information
+about the owner. 
 
-Фитнес содержит информацию об абонементах, которые:
+Information about the owner: first name, last name, year of birth.
 
-1) зарегистрированы в тренажерном зале (массив абонементов);
-2) зарегистрированы в бассейне (массив абонементов);
-3) зарегистрированы на групповых занятиях (массив абонементов).
+Fitness contains information about memberships that:
 
-В каждой зоне (бассейн, тренажерный зал, групповые занятия) одновременно может быть зарегистрировано 20 абонементов.
+1) registered in the gym (membership array);
+2) registered in the pool (membership array);
+3) registered in group classes (membership array).
 
-Когда фитнес клуб закрывается, клиенты покидают его (массив с null элементами).
+In each zone (pool, gym, group classes) only 20 memberships can be registered at the same time.
 
-Когда клиент приходит в фитнес клуб, он сообщает желаемую зону и показывает абонемент. Поэтому перед добавлением в один
-из массивов, необходимо проверить можно ли по данному абонементу пройти в желаемую зону, если посетитель не может
-пройти, необходимо сообщить ему причину.
+When the fitness club closes, owner leave it (array with null elements).
 
-Посетитель не может пройти:
+The owner cannot pass:
 
-1) если абонемент просрочен,
-2) если он пытается пройти в зону, которая не разрешена по его абонементу,
-3) если в зоне нет свободных мест.
+1) if the membership is expired,
+2) if he tries to enter a zone that is not allowed on his membership,
+3) if there are no free places in the zone.
+4) according to the age 
 
-Абонемент не может быть зарегистрирован одновременно в нескольких зонах.
-
-Вывод информации о посетителях: тренажерный зал, бассейн, групповые занятия.
-
-Вывод информации о посетителях в консоль каждый раз, когда абонемент регистрируется в одной из зон (
-добавляется в массив). 
-
-Информация для вывода:
-1. Фамилия Имя Посещаемая зона (бассейн/тренажерный зал/групповые занятия)
-2. Дата и время посещения
-
-Экземпляры классов (данные о владельце, абонемент, фитнес) в методе main отдельного класса (Application).
+A membership cannot be registered in several zones at the same time.
