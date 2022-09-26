@@ -5,6 +5,9 @@ import fitnessApp.body.*;
 import java.time.LocalDate;
 import java.time.Month;
 
+/**
+ * @author Alexander Iablonski
+ * */
 public class Application {
     public static void main(String[] args) {
         OwnerDetails owner1 = new OwnerDetails("Alex","Smith",LocalDate.of(2012, Month.APRIL, 1));
