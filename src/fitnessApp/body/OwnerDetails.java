@@ -2,6 +2,9 @@ package fitnessApp.body;
 
 import java.time.LocalDate;
 
+/**
+ * @author Alexander Iablonski
+ * */
 public class OwnerDetails {
     private String name;
     private String surname;
