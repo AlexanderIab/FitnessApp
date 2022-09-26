@@ -2,6 +2,9 @@ package fitnessApp.body;
 
 import java.time.LocalDate;
 
+/**
+ * @author Alexander Iablonski
+ * */
 public class Membership {
     private LocalDate dateOfReg;
     private LocalDate dateOfExpiry;
